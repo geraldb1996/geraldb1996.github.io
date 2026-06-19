@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerald Bejarano — Project Showcase</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header-brand">
+          <img src="images/pagelogo.jpg" alt="GeraldGlitch" class="header-logo">
+          <span class="header-title">Gerald Bejarano</span>
+        </a>
+        <p class="header-subtitle">Project Showcase</p>
+        <p class="header-bio">Sys Engineer 🖥️ | Indie Game Dev 🎮 | Tech Enthusiast ⚙️</p>
+        <div class="header-links">
+          <a href="https://github.com/geraldb1996" target="_blank" rel="noopener" class="header-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/geraldb1996/" target="_blank" rel="noopener" class="header-link">LinkedIn</a>
+          <a href="https://instagram.com/geraldb1996" target="_blank" rel="noopener" class="header-link">Instagram</a>
+          <a href="https://x.com/geraldb1996x" target="_blank" rel="noopener" class="header-link">X</a>
+          <a href="https://linktr.ee/geraldb1996" target="_blank" rel="noopener" class="header-link">Linkr</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="paused">Paused</button>
+          <button class="filter-btn" data-filter="finished">Finished</button>
+          <button class="filter-btn" data-filter="abandoned">Abandoned</button>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card" data-status="active">
+            <a href="#" class="project-link">
+              <div class="project-image-wrapper">
+                <img src="images/pooppos.png" alt="Pooppos" class="project-image" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h2 class="project-name">Pooppos</h2>
+                  <span class="project-status status-active">Active</span>
+                </div>
+                <p class="project-description">
+                  All-in-one free POS system for small businesses. Track inventory, expenses, sales, providers, and customers in a single offline-first application.
+                </p>
+                <div class="project-techs">
+                  <span class="tech-tag">Godot</span>
+                  <span class="tech-tag">GDScript</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-platforms">
+                  <span class="platform-badge">Windows</span>
+                  <span class="platform-badge">Linux</span>
+                  <span class="platform-badge soon">Android (soon)</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card" data-status="active">
+            <a href="#" class="project-link">
+              <div class="project-image-wrapper">
+                <img src="images/fito.png" alt="Fito" class="project-image" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h2 class="project-name">Fito</h2>
+                  <span class="project-status status-active">Active</span>
+                </div>
+                <p class="project-description">
+                  Fitness tracker and sport timer with custom .fito routine files. Built-in routine explorer with online updates and Google Sheets integration for sharing.
+                </p>
+                <div class="project-techs">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">JSON</span>
+                </div>
+                <div class="project-platforms">
+                  <span class="platform-badge">Android</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card" data-status="active">
+            <a href="#" class="project-link">
+              <div class="project-image-wrapper">
+                <img src="images/dojoinputs.png" alt="DojoInputs" class="project-image" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h2 class="project-name">DojoInputs</h2>
+                  <span class="project-status status-active">Active</span>
+                </div>
+                <p class="project-description">
+                  Fighting game combo practice tool. Record, load, and share combos using .dojofiles with real-time visual feedback — built for Brawlhalla and similar titles.
+                </p>
+                <div class="project-techs">
+                  <span class="tech-tag">Godot</span>
+                  <span class="tech-tag">GDScript</span>
+                  <span class="tech-tag">JSON</span>
+                </div>
+                <div class="project-platforms">
+                  <span class="platform-badge">Windows</span>
+                  <span class="platform-badge">Linux</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card" data-status="finished">
+            <a href="#" class="project-link">
+              <div class="project-image-wrapper">
+                <img src="images/dojohub.png" alt="DojoHub" class="project-image" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h2 class="project-name">DojoHub</h2>
+                  <span class="project-status status-finished">Finished</span>
+                </div>
+                <p class="project-description">
+                  Community hub for DojoInputs. Create an account, upload and discover .dojofile combos. Web companion for the DojoInputs combo trainer.
+                </p>
+                <div class="project-techs">
+                  <span class="tech-tag">Astro</span>
+                  <span class="tech-tag">Supabase</span>
+                  <span class="tech-tag">SQL</span>
+                </div>
+                <div class="project-platforms">
+                  <span class="platform-badge">Web</span>
+                  <span class="platform-badge">GitHub Pages</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card" data-status="paused">
+            <a href="#" class="project-link">
+              <div class="project-image-wrapper">
+                <img src="images/chickens.png" alt="Chickens" class="project-image" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h2 class="project-name">Chickens</h2>
+                  <span class="project-status status-paused">Paused</span>
+                </div>
+                <p class="project-description">
+                  Puzzle game where you guide your chicks across busy streets, avoiding cars and obstacles to reach the other side safely.
+                </p>
+                <div class="project-techs">
+                  <span class="tech-tag">GameMaker Studio 2</span>
+                  <span class="tech-tag">GML</span>
+                </div>
+                <div class="project-platforms">
+                  <span class="platform-badge">HTML5</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card" data-status="abandoned">
+            <a href="#" class="project-link">
+              <div class="project-image-wrapper">
+                <img src="images/nicat_team.png" alt="Nicat Team" class="project-image" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h2 class="project-name">Nicat Team</h2>
+                  <span class="project-status status-abandoned">Abandoned</span>
+                </div>
+                <p class="project-description">
+                  Indie game development team. Titles include <em>Reto Nica 1 &amp; 2</em>, <em>Hold the Cat</em>, <em>Run Away the Dragon</em>, <em>Cauce Surfer</em>, and <em>Interviewer</em> (job interview practice tool).
+                </p>
+                <div class="project-techs">
+                  <span class="tech-tag">GameMaker Studio 1.4</span>
+                  <span class="tech-tag">Godot</span>
+                  <span class="tech-tag">HTML / CSS / JS</span>
+                  <span class="tech-tag">Krita</span>
+                </div>
+                <div class="project-platforms">
+                  <span class="platform-badge">Windows</span>
+                  <span class="platform-badge">HTML5</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card" data-status="active">
+            <a href="#" class="project-link">
+              <div class="project-image-wrapper">
+                <img src="images/geraldglitch.png" alt="GeraldGlitch" class="project-image" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h2 class="project-name">GeraldGlitch</h2>
+                  <span class="project-status status-active">Active</span>
+                </div>
+                <p class="project-description">
+                  Personal indie dev profile on itch.io. Central publishing hub for most projects — games, tools, and experimental software.
+                </p>
+                <div class="project-techs">
+                  <span class="tech-tag">itch.io</span>
+                </div>
+                <div class="project-platforms">
+                  <span class="platform-badge">Web</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-copy">&copy; 2026 Gerald Bejarano</p>
+          <div class="footer-links">
+            <a href="https://github.com/geraldb1996" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/geraldb1996/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+            <a href="https://instagram.com/geraldb1996" target="_blank" rel="noopener" class="footer-link">Instagram</a>
+            <a href="https://x.com/geraldb1996x" target="_blank" rel="noopener" class="footer-link">X</a>
+            <a href="https://linkr.ee/geraldb1996" target="_blank" rel="noopener" class="footer-link">Linkr</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+
+          const filter = btn.dataset.filter;
+
+          projectCards.forEach(card => {
+            if (filter === 'all' || card.dataset.status === filter) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
