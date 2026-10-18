@@ -332,6 +332,116 @@ img {
   color: var(--text-secondary);
 }
 
+/* ── Contact CTA ── */
+
+.contact-cta {
+  margin-top: 80px;
+}
+
+.contact-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+}
+
+.contact-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.contact-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 6px;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact-form ::placeholder {
+  color: var(--text-muted);
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.form-submit {
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 10px 24px;
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.form-submit:hover {
+  background: #5b4bd1;
+  border-color: #5b4bd1;
+}
+
+.form-note {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
 /* ── Footer ── */
 
 .footer {
@@ -370,6 +480,18 @@ img {
 /* ── Responsive ── */
 
 @media (max-width: 700px) {
+  .contact-cta {
+    margin-top: 56px;
+  }
+
+  .contact-card {
+    padding: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
   .header {
     padding: 32px 0 24px;
     margin-bottom: 32px;

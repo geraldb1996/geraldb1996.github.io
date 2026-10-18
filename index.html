@@ -292,6 +292,60 @@
       </div>
     </main>
 
+    <section class="contact-cta" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2 class="contact-title">Have a project in mind?</h2>
+          <p class="contact-subtitle">
+            Got an idea — a game, an app, a tool? Tell me about it.
+            I just need a few details to start the conversation.
+          </p>
+          <form id="project-form" class="contact-form">
+            <div class="form-row">
+              <label class="form-field">
+                <span class="form-label">Your name</span>
+                <input type="text" name="name" required placeholder="Your name">
+              </label>
+              <label class="form-field">
+                <span class="form-label">Your email</span>
+                <input type="email" name="email" required placeholder="your@email.com">
+              </label>
+            </div>
+            <div class="form-row">
+              <label class="form-field">
+                <span class="form-label">Project type</span>
+                <select name="type">
+                  <option>Game</option>
+                  <option>Mobile app</option>
+                  <option>Desktop app</option>
+                  <option>Website</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="form-field">
+                <span class="form-label">Approximate budget</span>
+                <select name="budget">
+                  <option>Not defined yet</option>
+                  <option>Under $500</option>
+                  <option>$500 – $2000</option>
+                  <option>$2000 – $5000</option>
+                  <option>Over $5000</option>
+                </select>
+              </label>
+            </div>
+            <label class="form-field">
+              <span class="form-label">Tell me about your idea</span>
+              <textarea name="idea" rows="5" required placeholder="What do you want to build, who is it for, and what would make it special…"></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="form-submit">Send my idea</button>
+              <p class="form-note" id="form-status" role="status"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -308,6 +362,36 @@
     </footer>
 
     <script>
+      const CONTACT_EMAIL = "geraldb1996@gmail.com"; // ⚠️ cambia esto por tu correo real
+
+      const form = document.getElementById("project-form");
+      const status = document.getElementById("form-status");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+
+        const subject = `[Project] ${data.get("type")} — ${data.get("name")}`;
+        const body = [
+          `Name: ${data.get("name")}`,
+          `Email: ${data.get("email")}`,
+          `Project type: ${data.get("type")}`,
+          `Budget: ${data.get("budget")}`,
+          "",
+          "Idea:",
+          data.get("idea"),
+          "",
+          "— Sent from geraldb1996.com",
+        ].join("\n");
+
+        window.location.href =
+          `mailto:${CONTACT_EMAIL}` +
+          `?subject=${encodeURIComponent(subject)}` +
+          `&body=${encodeURIComponent(body)}`;
+
+        status.textContent = "Your email client just opened with the message ready — just hit send.";
+      });
+
       const filterBtns = document.querySelectorAll('.filter-btn');
       const projectCards = document.querySelectorAll('.project-card');
 
